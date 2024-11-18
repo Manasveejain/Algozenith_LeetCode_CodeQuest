@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include<string.h>
+#include<stdlib.h>
 int romanToInt(char* s);
 
 int main() {
@@ -53,7 +54,10 @@ int romanToInt(char* s) {
      else if(s[i]=='I')
      sum+=1;
      else 
+     {
      printf("Invalid Input");
+      exit(0);
+}
     }
     return sum;
 }
